@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    text-align: center
+}
+h2{
+    color: red;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+p{
+    color: rgb(128, 17, 17);
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif   
+}
+button{
+    border: 10px groove rgb(221, 200, 9);
+padding: 20px;
+padding-left: 30px;
+padding-right: 30px;
+background-color: rgb(33, 21, 100);
+color:yellow ;
+border-radius: 50px
+}
+
+</style>
+<body>
+    <h2 id="a">JavaScript</h2>
+<p id="memo"> </p>
+<hr>
+<script>
+function myFunction() { 
+  document.getElementById("memo").innerHTML = "Hello everyone I am using JavaScript language now!";
+  document.getElementById("memo").style .backgroundColor="lightgray";
+  document.getElementById("memo").style.fontSize="30px";
+  document.getElementById("memo").style.color="darkblue";
+  document.getElementById("memo").style.fontFamily="impact";
+  document.getElementById("memo").style.textAlign="center";
+
+  document.getElementById("a").innerHTML = "Hello everyone I am using JavaScript language now!";
+  document.getElementById("a").style .backgroundColor="lightgray";
+  document.getElementById("a").style.fontSize="40px";
+  document.getElementById("a").style.color="rgb(221, 200, 9)";
+//   document.getElementById("a").style.fontFamily="impact";
+  document.getElementById("a").style.textAlign="center";
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button>
+</body>
+</html>
